@@ -1,12 +1,15 @@
-function App() {
+import { Outlet } from "react-router";
+import Nav from "./components/Nav";
 
+function App() {
   return (
     <>
       <div>
-        <h1>Hey, it's Jack.</h1>
+        <Nav />
+        <Outlet />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
