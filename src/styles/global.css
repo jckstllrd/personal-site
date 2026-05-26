@@ -76,11 +76,35 @@ h6 {
 }
 
 :root {
-  --spacing-xs: 4px;
-  --spacing-sm: 8px;
-  --spacing-md: 12px;
-  --spacing-lg: 16px;
-  --spacing-xl: 24px;
-  --spacing-heading: 32px;
-  --spacing-hero: 48px;
+  --color-text: black;
+  --color-text-muted: lightgrey;
+  --color-bg: whitesmoke;
+  --color-surface: white;
+  --color-accent: green;
+  --color-border: blue;
+
+  --text-sm: 4px;
+  --text-base: 12px;
+  --text-lg: 16px;
+  --text-xl: 24px;
+  --text-2xl: 32px;
+  --text-3xl: 48px;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+  --space-2xl: 32px;
+  --space-hero: 48px;
+
+  --radius-sm: 10px;
+  --radius-md: 20px;
+  --radius-lg: 30px;
+
+  --transition-fast: 150ms ease;
+  --transition-slow: 250ms ease;
+
+  --shadow-sm: 5px 5px grey;
+  --shadow-md: 10px 10px grey;
 }
