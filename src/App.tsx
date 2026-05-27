@@ -3,12 +3,10 @@ import Nav from "@/components/Nav";
 
 function App() {
   return (
-    <>
-      <div>
-        <Nav />
-        <Outlet />
-      </div>
-    </>
+    <div>
+      <Nav />
+      <Outlet />
+    </div>
   );
 }
 
