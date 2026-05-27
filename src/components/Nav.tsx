@@ -1,10 +1,11 @@
 import { Link } from "react-router";
+import styles from "./Nav.module.css";
 
 function Nav() {
   return (
     <header>
-      <nav>
-        <ul>
+      <nav className={styles.navWrapper}>
+        <ul className={styles.navLinks}>
           <li>
             <Link to="/">home</Link>
           </li>
