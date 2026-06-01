@@ -2,13 +2,24 @@ footer {
   height: 5vh;
   background-color: var(--color-border);
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 
 .socialsList {
   display: flex;
+  justify-content: space-around;
   gap: var(--space-lg);
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+li {
+  align-self: center;
+}
+
+img {
+  object-fit: cover;
+  width: 40px;
+  aspect-ratio: 1/1;
 }
