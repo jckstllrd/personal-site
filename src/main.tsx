@@ -6,9 +6,9 @@ import "./styles/global.css";
 import Home from "./pages/Home.tsx";
 import Projects from "./pages/Projects.tsx";
 import About from "./pages/About.tsx";
-import Blogs from "./pages/Blogs.tsx";
+import Articles from "./pages/Articles.tsx";
 import Contact from "./pages/Contact.tsx";
-import BlogDetail from "./pages/BlogDetails.tsx";
+import ArticleDetail from "./pages/ArticleDetails.tsx";
 
 const router = createBrowserRouter([
   {
@@ -28,12 +28,12 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "blogs",
-        element: <Blogs />,
+        path: "articles",
+        element: <Articles />,
       },
       {
-        path: "blogs/:id",
-        element: <BlogDetail />,
+        path: "articles/:id",
+        element: <ArticleDetail />,
       },
       {
         path: "contact",

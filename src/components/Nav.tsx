@@ -13,7 +13,7 @@ function Nav() {
             <Link to="/projects">projects</Link>
           </li>
           <li>
-            <Link to="/blogs">blogs</Link>
+            <Link to="/articles">articles</Link>
           </li>
           <li>
             <Link to="/about">about</Link>

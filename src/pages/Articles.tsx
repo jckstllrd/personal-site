@@ -1,11 +1,11 @@
 import Container from "@/components/Container";
 
-function Blogs() {
+function Articles() {
   return (
     <Container>
-      <h1>Blog</h1>
+      <h1>Articles</h1>
     </Container>
   );
 }
 
-export default Blogs;
+export default Articles;
