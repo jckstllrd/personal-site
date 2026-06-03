@@ -1,10 +1,12 @@
 .hero {
   display: flex;
+  flex-grow: 1;
   align-self: center;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: var(--space-xl);
+  font-size: var(--text-xl);
 }
 
 .ctaButtons {

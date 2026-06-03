@@ -108,6 +108,10 @@ h6 {
   --shadow-sm: 5px 5px grey;
   --shadow-md: 10px 10px grey;
 
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
   color: var(--color-text);
   background: var(--color-bg);
 }
