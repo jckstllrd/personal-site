@@ -1,6 +1,4 @@
 .navWrapper {
-  background-color: var(--color-border);
-  color: var(--color-bg);
   font-size: var(--text-xl);
   display: flex;
   justify-content: flex-end;
@@ -9,11 +7,6 @@
 
 a {
   text-decoration: none;
-  color: var(--color-bg);
-}
-
-a:active {
-  color: var(--color-accent);
 }
 
 .navLinks {

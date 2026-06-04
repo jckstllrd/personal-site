@@ -1,6 +1,5 @@
 footer {
   height: 5vh;
-  background-color: var(--color-border);
   display: flex;
   justify-content: space-around;
 }

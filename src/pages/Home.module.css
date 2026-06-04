@@ -17,8 +17,6 @@
 }
 
 button {
-  background-color: var(--color-accent);
-  color: var(--color-bg);
   border-radius: 10px;
   border: none;
 }

@@ -76,12 +76,18 @@ h6 {
 }
 
 :root {
-  --color-text: #344e41;
-  --color-text-muted: #a3b18a;
-  --color-bg: #dad7cd;
-  --color-surface: white;
-  --color-accent: #588157;
-  --color-border: #3a5a40;
+  --color-text: black;
+  --color-background: white;
+  --color-blurred-background: grey;
+  --color-muted-background: lightgrey;
+  --color-action: red;
+  --color-primary: white;
+  --color-secondary: white;
+  --color-tertiary: white;
+  --color-decorative: white;
+  --color-info: white;
+  --color-warning: red;
+  --color-success: green;
 
   --text-sm: 4px;
   --text-base: 12px;
@@ -113,5 +119,5 @@ h6 {
   font-weight: 500;
   font-style: normal;
   color: var(--color-text);
-  background: var(--color-bg);
+  background: var(--color-background);
 }
