@@ -3,12 +3,12 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import App from "./App.tsx";
 import "./styles/global.css";
-import Home from "./pages/Home.tsx";
-import Projects from "./pages/Projects.tsx";
-import About from "./pages/About.tsx";
-import Articles from "./pages/Articles.tsx";
-import Contact from "./pages/Contact.tsx";
-import ArticleDetail from "./pages/ArticleDetails.tsx";
+import Home from "./pages/Home/Home.tsx";
+import Projects from "./pages/Projects/Projects.tsx";
+import About from "./pages/About/About.tsx";
+import Articles from "./pages/Articles/Articles.tsx";
+import Contact from "./pages/Contact/Contact.tsx";
+import ArticleDetail from "./pages/Articles/ArticleDetails.tsx";
 
 const router = createBrowserRouter([
   {

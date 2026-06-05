@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import ghlogo from "../content/GitHub_Invertocat_White_Clearspace.png";
+import ghlogo from "../../content/GitHub_Invertocat_White_Clearspace.png";
 
 export default function Footer() {
   return (
