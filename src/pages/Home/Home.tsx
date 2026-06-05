@@ -1,4 +1,4 @@
-import Container from "@/components/Container";
+import Container from "@/components/Container/Container";
 import styles from "./Home.module.css";
 import { useNavigate } from "react-router";
 
