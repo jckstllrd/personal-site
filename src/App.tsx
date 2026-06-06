@@ -1,12 +1,12 @@
 import { Outlet } from "react-router";
-import Nav from "@/components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
 import styles from "./App.module.css";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <div className={styles.layoutWrapper}>
-      <Nav />
+      <Header />
       <main>
         <Outlet />
       </main>

@@ -1,17 +1,7 @@
-.navWrapper {
-  font-size: var(--text-xl);
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 var(--space-lg);
-}
-
-a {
-  text-decoration: none;
-}
-
 .navLinks {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   gap: var(--space-lg);
 }

@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  align-items: baseline;
+  font-size: var(--text-lg);
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.logo {
+  color: var(--color-primary);
+  font-size: var(--text-xl);
+}
