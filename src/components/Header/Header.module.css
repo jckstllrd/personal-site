@@ -1,8 +1,8 @@
 header {
   display: flex;
-  height: 3rem;
+  height: 5rem;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   font-size: var(--text-lg);
   color: var(--color-text);
 }
