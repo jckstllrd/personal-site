@@ -4,9 +4,13 @@
   padding: var(--space-md);
 }
 
-.projectButtons {
+.projectLinks {
   display: flex;
   gap: var(--space-xl);
   align-items: center;
   justify-content: space-between;
+}
+
+.links {
+  color: var(--color-primary);
 }

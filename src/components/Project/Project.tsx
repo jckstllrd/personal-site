@@ -12,9 +12,13 @@ function Project({ name, desc, liveLink, repoLink }: Props) {
     <div className={styles.projectContainer}>
       <h2>{name}</h2>
       <p>{desc}</p>
-      <div className={styles.projectButtons}>
-        <a href={liveLink}>live</a>
-        <a href={repoLink}>repo</a>
+      <div className={styles.projectLinks}>
+        <a className={styles.links} href={liveLink}>
+          live
+        </a>
+        <a className={styles.links} href={repoLink}>
+          repo
+        </a>
       </div>
     </div>
   );
