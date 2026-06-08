@@ -1,0 +1,12 @@
+.projectContainer {
+  border: 1px solid var(--color-text);
+  border-radius: 10px;
+  padding: var(--space-md);
+}
+
+.projectButtons {
+  display: flex;
+  gap: var(--space-xl);
+  align-items: center;
+  justify-content: space-between;
+}
