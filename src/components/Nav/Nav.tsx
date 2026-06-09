@@ -6,9 +6,6 @@ function Nav() {
     <nav className={styles.navWrapper}>
       <ul className={styles.navLinks}>
         <li>
-          <Link to="/">home</Link>
-        </li>
-        <li>
           <Link to="/projects">projects</Link>
         </li>
         <li>
@@ -16,9 +13,6 @@ function Nav() {
         </li>
         <li>
           <Link to="/about">about</Link>
-        </li>
-        <li>
-          <Link to="/contact">contact </Link>
         </li>
       </ul>
     </nav>
