@@ -1,5 +1,6 @@
 import styles from "./Footer.module.css";
-import ghlogo from "../../content/GitHub_Invertocat_White_Clearspace.png";
+import ghLogo from "../../content/GitHub_Invertocat_Black_Clearspace.png";
+import inLogo from "../../content/InBug-Black.png";
 
 export default function Footer() {
   return (
@@ -7,7 +8,12 @@ export default function Footer() {
       <ul className={styles.socialsList}>
         <li>
           <a href="https://github.com/jckstllrd">
-            <img src={ghlogo} alt="GitHub Logo" />
+            <img className={styles.img} src={ghLogo} alt="GitHub Logo" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/jack-stallard-a67899192/">
+            <img src={inLogo} alt="LinkedIn Logo" className={styles.inLogo} />
           </a>
         </li>
       </ul>

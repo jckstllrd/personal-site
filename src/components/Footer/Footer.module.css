@@ -1,6 +1,5 @@
 footer {
   height: 5vh;
-  align-self: flex-end;
   display: flex;
   justify-content: space-around;
 }
@@ -18,8 +17,12 @@ li {
   align-self: center;
 }
 
-img {
+.img {
   object-fit: cover;
   width: 40px;
   aspect-ratio: 1/1;
+}
+
+.inLogo {
+  width: 30px;
 }
