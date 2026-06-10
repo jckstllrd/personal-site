@@ -3,7 +3,7 @@ import Container from "@/components/Container/Container";
 function About() {
   return (
     <Container>
-      <h1>About</h1>
+      <h1>about</h1>
       <p>
         I am a CS Grad that is currently rediscovering a passion for
         programming. I work as an AI Strategy Consultant within the AI & Data
