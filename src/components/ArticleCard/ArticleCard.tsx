@@ -16,7 +16,7 @@ function ArticleCard({
   link,
 }: ArticleCardProps) {
   return (
-    <a href={link}>
+    <a key={id} href={link}>
       <div className={styles.articleCard}>
         <h2>{title}</h2>
         <div className={styles.articleDetails}>
