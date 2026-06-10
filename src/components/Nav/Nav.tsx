@@ -8,17 +8,26 @@ function Nav() {
     console.log("clicked");
     setMenuOpen(!menuOpen);
   };
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
   return (
     <nav className={styles.navWrapper}>
       <ul className={`${styles.navLinks} ${menuOpen ? styles.open : ""}`}>
         <li>
-          <Link to="/projects">projects</Link>
+          <Link to="/projects" onClick={closeMenu}>
+            projects
+          </Link>
         </li>
         <li>
-          <Link to="/articles">articles</Link>
+          <Link to="/articles" onClick={closeMenu}>
+            articles
+          </Link>
         </li>
         <li>
-          <Link to="/about">about</Link>
+          <Link to="/about" onClick={closeMenu}>
+            about
+          </Link>
         </li>
       </ul>
       <div className={styles.hamburgerMenu} onClick={toggleMenu}>
