@@ -1,7 +1,7 @@
 header {
   display: flex;
   height: 5rem;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   font-size: var(--text-lg);
   color: var(--color-text);

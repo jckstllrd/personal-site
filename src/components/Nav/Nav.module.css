@@ -1,3 +1,7 @@
+.navWrapper {
+  display: flex;
+  align-items: center;
+}
 .navLinks {
   list-style: none;
   display: flex;
@@ -6,8 +10,31 @@
   gap: var(--space-lg);
 }
 
+.hamburgerMenu {
+  display: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 10;
+}
+
+.hamburgerMenu > * {
+  width: 1.5rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  background-color: black;
+  transform-origin: 1px;
+  transition: all 0.125s linear;
+}
+
 @media (max-width: 768px) {
+  .hamburgerMenu {
+    display: flex;
+    z-index: 10;
+  }
   .navLinks {
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -16,8 +43,17 @@
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-
-  .navLinks.active {
+  .open {
     display: flex;
+  }
+
+  .b1Open {
+    transform: rotate(45deg);
+  }
+  .b2Open {
+    opacity: 0;
+  }
+  .b3Open {
+    transform: rotate(-45deg);
   }
 }
