@@ -13,6 +13,7 @@ function Articles() {
         }
         datePublished={"17th March 2026"}
         readingTime={6}
+        link={"https://dev.to/jckstllrd/learning-to-learn-again-48j3"}
       />
     </Container>
   );

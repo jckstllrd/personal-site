@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router";
 import styles from "./ArticleCard.module.css";
 interface ArticleCardProps {
   id: number;
@@ -6,6 +5,7 @@ interface ArticleCardProps {
   desc: string;
   datePublished: string;
   readingTime: number;
+  link: string;
 }
 function ArticleCard({
   id,
@@ -13,20 +13,19 @@ function ArticleCard({
   desc,
   datePublished,
   readingTime,
+  link,
 }: ArticleCardProps) {
-  const navigate = useNavigate();
   return (
-    <div
-      className={styles.articleCard}
-      onClick={() => navigate(`/articles/${id}`)}
-    >
-      <h2>{title}</h2>
-      <div className={styles.articleDetails}>
-        <p className={styles.datePublished}>{datePublished}</p>
-        <p className={styles.readingTime}>{readingTime} min read</p>
+    <a href={link}>
+      <div className={styles.articleCard}>
+        <h2>{title}</h2>
+        <div className={styles.articleDetails}>
+          <p className={styles.datePublished}>{datePublished}</p>
+          <p className={styles.readingTime}>{readingTime} min read</p>
+        </div>
+        <p>{desc}</p>
       </div>
-      <p>{desc}</p>
-    </div>
+    </a>
   );
 }
 
