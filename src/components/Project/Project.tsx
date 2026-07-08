@@ -13,14 +13,14 @@ function Project({ name, desc, liveLink, repoLink }: Props) {
       <h2>{name}</h2>
       <p>{desc}</p>
       <div className={styles.projectLinks}>
+        <a className={styles.links} href={repoLink}>
+          repo
+        </a>
         {liveLink && (
           <a className={styles.links} href={liveLink}>
             live
           </a>
         )}
-        <a className={styles.links} href={repoLink}>
-          repo
-        </a>
       </div>
     </div>
   );
