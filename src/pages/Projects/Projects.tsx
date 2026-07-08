@@ -11,10 +11,25 @@ function Projects() {
           <Project
             name={"Habit Tracker"}
             desc={
-              "A full stack habit tracker app build with aut, api endpoints, controlled routes and a postgresql database"
+              "A full stack habit tracker app build with auth, api endpoints, controlled routes and a postgresql database"
             }
             liveLink={"https://habit-tracker-sepia-beta.vercel.app/"}
             repoLink={"https://github.com/jckstllrd/habit-tracker"}
+          />
+          <Project
+            name={"Personal Site"}
+            desc={
+              "A full stack personal webpage to host my projects and articles"
+            }
+            liveLink={"https:/jackstallard.dev"}
+            repoLink={"https://github.com/jckstllrd/personal-site"}
+          />
+          <Project
+            name={"FPmL"}
+            desc={
+              "A machine learning optimsation project for simulating the Fantasy Premier League using real-world football stats"
+            }
+            repoLink={"https://github.com/jckstllrd/FPmL"}
           />
         </div>
       </div>

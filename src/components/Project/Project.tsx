@@ -3,7 +3,7 @@ import styles from "./Project.module.css";
 interface Props {
   name: string;
   desc: string;
-  liveLink: string;
+  liveLink?: string;
   repoLink: string;
 }
 
