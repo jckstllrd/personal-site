@@ -19,7 +19,7 @@ function Projects() {
           <Project
             name={"Personal Site"}
             desc={
-              "A full stack personal webpage to host my projects and articles"
+              "A full stack personal webpage to host my projects and articles, that will be a continued work in progress"
             }
             liveLink={"https:/jackstallard.dev"}
             repoLink={"https://github.com/jckstllrd/personal-site"}
