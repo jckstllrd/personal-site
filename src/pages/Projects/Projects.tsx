@@ -21,7 +21,7 @@ function Projects() {
             desc={
               "A full stack personal webpage to host my projects and articles, that will be a continued work in progress"
             }
-            liveLink={"https:/jackstallard.dev"}
+            liveLink={"https://jackstallard.dev"}
             repoLink={"https://github.com/jckstllrd/personal-site"}
           />
           <Project
