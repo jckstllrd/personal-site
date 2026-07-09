@@ -54,6 +54,12 @@
   }
 }
 
+.typedDone {
+  animation: none;
+  width: 12ch;
+  border-right-color: transparent;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .typed {
     animation: none;
