@@ -8,12 +8,27 @@ function Home() {
   return (
     <Container>
       <div className={styles.hero}>
-        <h1>hi, i'm jack</h1>
+        <div className={styles.terminalLine}>
+          <p className={styles.prompt}>jack@site:~$ whoami</p>
+          <h1>
+            <span className={styles.typed}>hi, i'm jack</span>
+          </h1>
+        </div>
+        <p className={styles.tagline}>
+          ai strategy consultant, rediscovering a passion for building
+          software
+        </p>
         <div className={styles.ctaButtons}>
-          <button onClick={() => navigate("/projects")}>
+          <button
+            className={styles.primaryButton}
+            onClick={() => navigate("/projects")}
+          >
             view my projects
           </button>
-          <button onClick={() => navigate("/articles")}>
+          <button
+            className={styles.secondaryButton}
+            onClick={() => navigate("/articles")}
+          >
             view my articles
           </button>
         </div>
