@@ -1,5 +1,6 @@
 footer {
-  height: 5vh;
+  min-height: 4rem;
+  padding-block: var(--space-md);
   display: flex;
   justify-content: space-around;
 }
@@ -7,6 +8,7 @@ footer {
 .socialsList {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   gap: var(--space-lg);
   margin: 0;
   padding: 0;
@@ -17,6 +19,20 @@ li {
   align-self: center;
 }
 
+.socialsList a {
+  display: flex;
+  color: var(--color-text);
+  transition:
+    opacity var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.socialsList a:hover,
+.socialsList a:focus-visible {
+  opacity: 0.7;
+  color: var(--color-primary);
+}
+
 .img {
   object-fit: cover;
   width: 40px;
@@ -25,4 +41,9 @@ li {
 
 .inLogo {
   width: 30px;
+}
+
+.icon {
+  width: 34px;
+  height: 34px;
 }
