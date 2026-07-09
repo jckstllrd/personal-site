@@ -10,6 +10,39 @@
   gap: var(--space-lg);
 }
 
+.navLink {
+  position: relative;
+  padding-bottom: 2px;
+  transition: color var(--transition-fast);
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: right var(--transition-fast);
+}
+
+.navLink:hover,
+.navLink:focus-visible {
+  color: var(--color-primary);
+}
+
+.navLink:hover::after,
+.navLink:focus-visible::after,
+.activeLink::after {
+  right: 0;
+}
+
+.activeLink {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
 .hamburgerMenu {
   display: none;
   width: 1.5rem;
@@ -17,15 +50,20 @@
   justify-content: space-around;
   flex-flow: column nowrap;
   z-index: 10;
+  cursor: pointer;
 }
 
 .hamburgerMenu > * {
   width: 1.5rem;
   height: 0.25rem;
-  border-radius: 10px;
-  background-color: black;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-text);
   transform-origin: 1px;
-  transition: all 0.125s linear;
+  transition: var(--transition-fast);
+}
+
+.hamburgerMenu:hover > * {
+  background-color: var(--color-primary);
 }
 
 @media (max-width: 768px) {
@@ -40,8 +78,12 @@
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-background);
+    box-shadow: var(--shadow-sm);
+    padding: var(--space-lg);
+  }
+  .navLink::after {
+    display: none;
   }
   .open {
     display: flex;

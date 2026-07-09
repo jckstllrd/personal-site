@@ -15,4 +15,12 @@ a {
 .logo {
   color: var(--color-primary);
   font-size: var(--text-xl);
+  font-weight: 700;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.logo:hover,
+.logo:focus-visible {
+  color: var(--color-action);
 }

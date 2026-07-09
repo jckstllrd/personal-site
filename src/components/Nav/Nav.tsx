@@ -1,33 +1,34 @@
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 import styles from "./Nav.module.css";
 import { useState } from "react";
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
-    console.log("clicked");
     setMenuOpen(!menuOpen);
   };
   const closeMenu = () => {
     setMenuOpen(false);
   };
+  const navLinkClass = ({ isActive }: { isActive: boolean }) =>
+    `${styles.navLink} ${isActive ? styles.activeLink : ""}`;
   return (
     <nav className={styles.navWrapper}>
       <ul className={`${styles.navLinks} ${menuOpen ? styles.open : ""}`}>
         <li>
-          <Link to="/projects" onClick={closeMenu}>
+          <NavLink to="/projects" onClick={closeMenu} className={navLinkClass}>
             projects
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/articles" onClick={closeMenu}>
+          <NavLink to="/articles" onClick={closeMenu} className={navLinkClass}>
             articles
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/about" onClick={closeMenu}>
+          <NavLink to="/about" onClick={closeMenu} className={navLinkClass}>
             about
-          </Link>
+          </NavLink>
         </li>
       </ul>
       <div className={styles.hamburgerMenu} onClick={toggleMenu}>
