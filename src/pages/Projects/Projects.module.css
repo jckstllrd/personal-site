@@ -1,5 +1,12 @@
+.projectPage {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  padding-block: var(--space-2xl);
+}
+
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: var(--space-xl);
 }
