@@ -1,0 +1,37 @@
+.articleLink {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.articleCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  border: 1px solid var(--color-decorative);
+  border-radius: var(--radius-sm);
+  padding: var(--space-lg);
+  transition:
+    border-color var(--transition-fast),
+    background-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.articleLink:hover .articleCard,
+.articleLink:focus-visible .articleCard {
+  border-color: var(--color-primary);
+  background-color: var(--color-muted-background);
+  transform: translateY(-2px);
+}
+
+.articleDetails {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.datePublished,
+.readingTime {
+  font-size: var(--text-sm);
+  color: var(--color-secondary);
+}
