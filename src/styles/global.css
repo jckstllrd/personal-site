@@ -22,6 +22,29 @@ body {
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  font-size: var(--text-base);
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: var(--text-3xl);
+}
+
+h2 {
+  font-size: var(--text-xl);
+}
+
+h3 {
+  font-size: var(--text-lg);
 }
 
 /* 6. Improve media defaults */
@@ -76,25 +99,20 @@ h6 {
 }
 
 :root {
-  --color-text: black;
-  --color-background: white;
-  --color-blurred-background: grey;
-  --color-muted-background: lightgrey;
-  --color-action: red;
-  --color-primary: blue;
-  --color-secondary: white;
-  --color-tertiary: white;
-  --color-decorative: white;
-  --color-info: white;
-  --color-warning: red;
-  --color-success: green;
+  --color-text: #1c1f1a;
+  --color-background: #ffffff;
+  --color-muted-background: #eef2e9;
+  --color-primary: #3f5d3a;
+  --color-action: #2e4429;
+  --color-secondary: #6b8062;
+  --color-decorative: #d7ded1;
 
-  --text-sm: 4px;
-  --text-base: 12px;
-  --text-lg: 16px;
-  --text-xl: 24px;
-  --text-2xl: 32px;
-  --text-3xl: 48px;
+  --text-sm: 0.85rem;
+  --text-base: 1rem;
+  --text-lg: 1.15rem;
+  --text-xl: clamp(1.5rem, 1.25rem + 1.25vw, 2rem);
+  --text-2xl: clamp(2rem, 1.6rem + 2vw, 2.75rem);
+  --text-3xl: clamp(2.25rem, 1.7rem + 2.75vw, 3.25rem);
 
   --space-xs: 4px;
   --space-sm: 8px;
@@ -111,8 +129,8 @@ h6 {
   --transition-fast: 150ms ease;
   --transition-slow: 250ms ease;
 
-  --shadow-sm: 5px 5px grey;
-  --shadow-md: 10px 10px grey;
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.15);
 
   font-family: "Roboto Mono", sans-serif;
   color: var(--color-text);
@@ -121,8 +139,32 @@ h6 {
 
 @font-face {
   font-family: "Roboto Mono";
+  src: url(../assets/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url(../assets/fonts/Roboto_Mono/static/RobotoMono-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
   src: url(../assets/fonts/Roboto_Mono/static/RobotoMono-SemiBold.ttf);
   font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url(../assets/fonts/Roboto_Mono/static/RobotoMono-Bold.ttf);
+  font-weight: 700;
   font-style: normal;
   font-display: fallback;
 }
